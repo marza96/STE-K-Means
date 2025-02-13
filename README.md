@@ -23,7 +23,7 @@ and:
 ```math
 \sum_i \mathbf{U} = 1.
 ```
-In the STE context this problem can be solved by imposing defining trainable weight matrix $\mathbf{M}$ which is initialized using **K-Means++** and then split into:
+In the STE context this problem can be solved by imposing defining trainable weight matrix $\mathbf{M}$ which is initialized using [K-Means++](https://theory.stanford.edu/~sergei/papers/kMeansPP-soda.pdf) and then split into:
 ```math
 \mathbf{M} = \begin{bmatrix}\mathbf{D} & \mathbf{W} \end{bmatrix}
 ```
