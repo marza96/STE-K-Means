@@ -23,8 +23,10 @@ and:
 ```math
 \sum_i \mathbf{U} = 1.
 ```
-In the STE context this problem can be solved by imposing defining trainable weight matrix $\mathbf{M}$ which is initialized using **K-Means++** and then split into $$\mathbf{M} = \begin{bmatrix}\mathbf{D} & \mathbf{W} \end{bmatrix}$$ 
-
+In the STE context this problem can be solved by imposing defining trainable weight matrix $\mathbf{M}$ which is initialized using **K-Means++** and then split into:
+```math
+\mathbf{M} = \begin{bmatrix}\mathbf{D} & \mathbf{W} \end{bmatrix}
+```
 such that $\mathbf{D} = \in \mathbb{R}^{k \times k}$ and $\mathbf{W} \in \mathbb{R}^{n - k \times n}$. During training $\mathbf{U}$ is evaluated as:
 ```math
 \mathbf{U}^T = \begin{bmatrix}\mathbf{D} & \mathbf{g}(\mathbf{W}) \end{bmatrix}
