@@ -33,4 +33,4 @@ where $\mathbf{g}(\cdot)$ is te Gumbel-STE operator. The optimization problem is
 ![Model Folding Concept Figure](figures/km.png)
 
 ### STE Kmeans
-![Model Folding Concept Figure](figures/km.png)
+![Model Folding Concept Figure](figures/ste.png)
