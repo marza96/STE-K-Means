@@ -1,16 +1,3 @@
-<script type="text/javascript" async
-  src="https://polyfill.io/v3/polyfill.min.js?features=es6">
-</script>
-<script type="text/javascript" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
-
-$$
-\sum_{i=1}^{n} i = \frac{n(n+1)}{2}
-$$
-
-
-
 # STE-K-Means
 
 This repository contains an implementation of a differentiable K-Means solver using the Straight Through Estimator. 
