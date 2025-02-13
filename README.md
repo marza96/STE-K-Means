@@ -23,11 +23,13 @@ and:
 ```math
 \sum_i \mathbf{U} = 1.
 ```
-In the STE context this problem can be solved by imposing defining trainable weight matrices $\mathbf{D} = \text{Diag}(1, \dots, 1) \in \mathbb{R}^{k \times k}$ and $\mathbf{W} \in \mathbb{R}^{n - k \times n}$ such that $\mathbf{U}$ is evaluated as:
+In the STE context this problem can be solved by imposing defining trainable weight matrix $\mathbf{M}$ which is initialized using **K-Means++** and then split into $$\mathbf{M} = \begin{bmatrix}\mathbf{D} & \mathbf{W} \end{bmatrix}$$ 
+
+such that $\mathbf{D} = \in \mathbb{R}^{k \times k}$ and $\mathbf{W} \in \mathbb{R}^{n - k \times n}$. During training $\mathbf{U}$ is evaluated as:
 ```math
 \mathbf{U}^T = \begin{bmatrix}\mathbf{D} & \mathbf{g}(\mathbf{W}) \end{bmatrix}
 ```  
-where $\mathbf{g}(\cdot)$ is te Gumbel-STE operator. The optimization problem is then optimized using Adam or SGD. 
+where $\mathbf{g}(\cdot)$ is the **Gumbel-Straight-Through** operator. The optimization problem is then optimized using **Adam**. 
 
 ### Kmeans
 ![Model Folding Concept Figure](figures/km.png)
