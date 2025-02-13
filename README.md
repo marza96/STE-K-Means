@@ -4,6 +4,7 @@ This repository contains an implementation of a differentiable K-Means solver us
 
 
 ## Implementation
+$$a=2$$
 ![Model Folding Concept Figure](figures/math.png)
 
 
