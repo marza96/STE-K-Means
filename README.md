@@ -11,7 +11,7 @@ The core principle relies on considering the K-Means as a matrix factorization p
     \vdots \\
     \mathbf{x}_n^T \end{bmatrix} 
 ```
-Then the result from [Baukhage 2023] is used to formulate the K-Means problem as a low-rank matrix factorization problem of the form:
+Then the result from [Baukhage 2023](https://arxiv.org/pdf/1512.07548) is used to formulate the K-Means problem as a low-rank matrix factorization problem of the form:
 ```math
 \min_{\mathbf{U}} \|\mathbf{X} - \mathbf{U}(\mathbf{U}^T\mathbf{U})^{-1}\mathbf{U}^T \|_F^2
 ```
