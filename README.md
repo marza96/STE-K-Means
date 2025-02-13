@@ -1,6 +1,6 @@
 # STE-K-Means
 
-This repository contains an implementation of a differentiable K-Means solver using the Straight Through Estimator. 
+This repository contains the proof of concept for a differentiable K-Means solver using the Straight Through Estimator. 
 
 
 ## Implementation
