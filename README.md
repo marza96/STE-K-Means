@@ -1,6 +1,6 @@
 # STE-K-Means
 
-This repository contains the proof of concept for a differentiable K-Means solver using the Straight Through Estimator. The key property of K-Means, which says that it can be interpreted as a matrix factorization problem together is leveraged to get a constrained low-rank factorization problem. The Gumbel-Straight-Trhough operator is then used to cast this problem into a differentiable form.
+This repository contains the proof of concept for a differentiable K-Means solver using the Straight Through Estimator. The key property of K-Means, which says that it can be interpreted as a matrix factorization problem is leveraged to get a constrained low-rank factorization problem. The Gumbel-Straight-Trhough operator is then used to cast this problem into a differentiable form.
 
 
 ## Implementation
