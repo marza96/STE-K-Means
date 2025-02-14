@@ -15,11 +15,7 @@ The result from [Baukhage 2015](https://arxiv.org/pdf/1512.07548) is used to for
 ```math
 \min_{\mathbf{U}} \|\mathbf{X} - \mathbf{U}(\mathbf{U}^T\mathbf{U})^{-1}\mathbf{U}^T \|_F^2
 ```
-such that:
-```math
-\mathbf{U} \in \{0,1\}^{k \times n}
-```
-and:
+such that: $\mathbf{U} \in \{0,1\}^{k \times n}$ and:
 ```math
 \sum_i \mathbf{U} = 1.
 ```
