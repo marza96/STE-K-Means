@@ -27,7 +27,7 @@ such that $\mathbf{D} = \in \mathbb{R}^{k \times k}$ and $\mathbf{W} \in \mathbb
 ```math
 \mathbf{U}^T = \begin{bmatrix}\mathbf{D} & \mathbf{g}(\mathbf{W}) \end{bmatrix}
 ```  
-where $\mathbf{g}(\cdot)$ is the **Gumbel-Straight-Through** operator. The objective is then optimized using **Adam**. 
+where $\mathbf{g}(\cdot)$ is the **Gumbel-Straight-Through** operator. The objective is then optimized w.r.t. $\mathbf{W}$ using **Adam**. 
 
 ### K-means
 ![Model Folding Concept Figure](figures/km.png)
