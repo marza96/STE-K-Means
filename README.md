@@ -4,14 +4,14 @@ This repository contains the proof of concept for a differentiable K-Means solve
 
 
 ## Implementation
-The core principle relies on considering the K-Means as a matrix factorization problem. Specifically the data points $\mathbf{x}_i$ are concatenated in a data matrix $\mathbf{X}$ given as 
+The core principle relies on considering the K-Means as a matrix factorization problem. Specifically the data points $\mathbf{x}_i$ are concatenated in a data matrix $\mathbf{X}$ given as: 
 ```math
 \mathbf{X} = \begin{bmatrix} \mathbf{x}_1^T \\
     \mathbf{x}_2^T \\
     \vdots \\
     \mathbf{x}_n^T \end{bmatrix} 
 ```
-Then the result from [Baukhage 2015](https://arxiv.org/pdf/1512.07548) is used to formulate the K-Means problem as a low-rank matrix factorization problem of the form:
+The result from [Baukhage 2015](https://arxiv.org/pdf/1512.07548) is used to formulate the K-Means problem as a low-rank matrix factorization problem of the form:
 ```math
 \min_{\mathbf{U}} \|\mathbf{X} - \mathbf{U}(\mathbf{U}^T\mathbf{U})^{-1}\mathbf{U}^T \|_F^2
 ```
@@ -23,7 +23,7 @@ and:
 ```math
 \sum_i \mathbf{U} = 1.
 ```
-In the STE context this problem can be solved by defining trainable weight matrix $\mathbf{M}$ which is initialized using [K-Means++](https://theory.stanford.edu/~sergei/papers/kMeansPP-soda.pdf) and then split into:
+In the STE context this problem can be solved by defining trainable weight matrix $\mathbf{M}$ which is initialized using [K-Means++](https://theory.stanford.edu/~sergei/papers/kMeansPP-soda.pdf) and then partitioned as:
 ```math
 \mathbf{M} = \begin{bmatrix}\mathbf{D} & \mathbf{W} \end{bmatrix}
 ```
